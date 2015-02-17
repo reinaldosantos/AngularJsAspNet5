@@ -10,7 +10,6 @@ namespace AngularJsAspNet5.Controllers.Controllers
     public class Pedido
     {
         public DateTime Data { get; set; }
-
         public List<ItemPedido> Itens { get; set; }
     }
 
@@ -36,7 +35,7 @@ namespace AngularJsAspNet5.Controllers.Controllers
             pedido.Itens = lista;
             pedido.Data = DateTime.Now.Date;
 
-            return null;
+            return pedido;
         }
 
         [HttpPost]

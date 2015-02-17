@@ -3,8 +3,6 @@
 
         $http.get("Api/Pedido").success(function (response) {
             $scope.pedido = response;
-
-            $scope.pedido.Data = $filter('date')($scope.pedido.Data, 'yyyy-MM-dd');
         });
 
         $scope.Salvar = function () {
@@ -14,6 +12,5 @@
 
             });
         }
-
     });
 }());
