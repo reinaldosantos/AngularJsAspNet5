@@ -6,10 +6,8 @@
         });
 
         $scope.Salvar = function () {
-            var data = $scope.pedido;
-
-            $http.post('Api/Pedido', data).success(function (data, status, headers, config) {
-
+            $http.post('Api/Pedido', $scope.pedido).success(function (data, status, headers, config) {
+                alert(status);
             });
         }
     });
