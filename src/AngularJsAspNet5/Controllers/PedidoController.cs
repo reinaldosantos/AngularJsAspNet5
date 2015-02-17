@@ -36,7 +36,7 @@ namespace AngularJsAspNet5.Controllers.Controllers
             pedido.Itens = lista;
             pedido.Data = DateTime.Now.Date;
 
-            return pedido;
+            return null;
         }
 
         [HttpPost]
