@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@section Scripts {
+    <script src="~/scripts/pedido.js"></script>
+}
+
+<div ng-controller="pedidoController">
+    <div>
+        Data: <input type="text" ng-model="pedido.Data" />
+    </div>
+
+    <br />
+
+    <table>
+        <tr>
+            <td>Nome</td>
+            <td>Preço</td>
+        </tr>
+        <tr ng-repeat="item in pedido.Itens">
+            <td><input type="text" ng-model="item.Nome" /></td>
+            <td><input type="text" ng-model="item.Preco" /></td>
+        </tr>
+    </table>
+
+    <br />
+
+    <button ng-click="Salvar();">Salvar</button>
+</div>
