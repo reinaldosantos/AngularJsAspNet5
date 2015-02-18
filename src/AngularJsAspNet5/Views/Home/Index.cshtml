@@ -7,7 +7,8 @@
 }
 
 <div ng-controller="pedidoController">
-    <input type="text" ng-model="DataPedidoFormatada" />
+
+    <input id="dataPedido" type="text" value="{{ pedido.DataPedido | date:'dd/MM/yyyy' }}" />
 
     <br />
     <br />
@@ -25,5 +26,5 @@
 
     <br />
 
-    <button ng-click="Salvar();">Salvar</button>
+    <button ng-click="salvar();">Salvar</button>
 </div>
