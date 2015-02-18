@@ -9,7 +9,7 @@ namespace AngularJsAspNet5.Controllers.Controllers
 {
     public class Pedido
     {
-        public DateTime Data { get; set; }
+        public DateTime DataPedido { get; set; }
         public List<ItemPedido> Itens { get; set; }
     }
 
@@ -33,7 +33,7 @@ namespace AngularJsAspNet5.Controllers.Controllers
             lista.Add(new ItemPedido() { Nome = "Item 2", Preco = 30 });
 
             pedido.Itens = lista;
-            pedido.Data = DateTime.Now.Date;
+            pedido.DataPedido = DateTime.Now.Date;
 
             return pedido;
         }

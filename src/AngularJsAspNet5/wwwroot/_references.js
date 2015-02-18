@@ -6,3 +6,4 @@
 /// <reference path="lib/jquery/js/jquery.js" />
 /// <reference path="lib/angularjs/angular.min.js" />
 /// <reference path="scripts/Pedido.js" />
+/// <reference path="scripts/utilitarios.js" />
